@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><% include partials/head.ejs %> </head>
+<body>	
+	<div class = "navigation">
+		<section>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="contact">Contact us</a></li>
+			</ul>
+		</section>
+	</div>
+	<script type="text/x-handlebars" id="sendView">
+		<h1>Contact-us</h1>
+		<div>
+			<label for="title"> 
+				Title: <input name="title" id="title" placeholder="title">
+			</label>
+		</div>
+		
+		<div>
+			<label for="message"> 
+				Message : <textarea name="message" id="message" placeholder="message"> </textarea>
+			</label>
+		</div>
+		<div> 
+			<button type="button" id="send">Send</button>
+		</div>
+		<p>title: {{title}} <br/> message: {{message}}</p>
+	</script>
+</body>
+
+</html> 
